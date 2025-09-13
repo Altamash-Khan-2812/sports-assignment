@@ -1,0 +1,63 @@
+/* BASY STYLES FOR THE PAGE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ************** */
+/* NAVBAR STYLING */
+/* ************** */
+nav {
+  font-family: "DM Sans";
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10rem 0 10rem;
+  font-weight: 400;
+}
+
+nav ul {
+  gap: 3.5rem;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+}
+
+nav ul li a{
+    color: #26262699;
+}
+
+nav ul li a.active {
+  color: #262626;
+  font-weight: 700;
+}
+
+nav button{
+    align-items: center;
+    gap: 1rem;
+    background-color: #B8C2CE;
+    border: none;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 1.4rem;
+}
