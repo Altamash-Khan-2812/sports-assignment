@@ -729,3 +729,32 @@ footer ol button {
   position: relative;
   z-index: 1;
 }
+
+/* ****** */
+/* FOOTER */
+/* ****** */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 3rem;
+}
+.footer ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  border-radius: 6px;
+}
+.footer .paggination {
+  background-color: transparent;
+}
