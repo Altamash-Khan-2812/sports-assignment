@@ -24,6 +24,7 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 10rem;
 }
 
 /* ************** */
@@ -33,7 +34,7 @@ nav {
   font-family: "DM Sans";
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 10rem 0 10rem;
+  padding: 1.5rem 0 0 0;
   font-weight: 400;
   margin-bottom: 4rem;
 }
@@ -77,7 +78,7 @@ nav button {
   background-image: url("/images/basketball_sport_icon_in_minimalist_3d_render_2 1.svg");
   background-size: 40%;
   background-repeat: no-repeat;
-  padding: 5rem 10rem 0 10rem;
+  padding: 5rem 0 0 0;
   margin-bottom: 10rem;
   display: flex;
   gap: 4rem;
@@ -395,7 +396,7 @@ nav button {
   padding: 2rem 0;
 }
 
-.paggination span {
+.paggination li {
   font-family: "sequel sans", sans-serif;
   font-weight: 405;
   font-size: 2.4rem;
@@ -403,14 +404,16 @@ nav button {
   color: #2626269c;
 }
 
-section .paggination-back-btn {
+section .paggination-back-btn,
+footer .paggination-back-btn {
   background-color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section .paggination-forward-btn {
+section .paggination-forward-btn,
+footer .paggination-forward-btn {
   background-color: #000;
   color: #fff;
   margin-right: 2.5rem;
@@ -631,7 +634,8 @@ section .paggination-forward-btn {
   gap: 2.5rem;
 }
 
-.sports-article .buttons button {
+.sports-article .buttons button,
+footer ol button {
   padding: 1.2rem 2.6rem;
   border: none;
   color: #fff;
@@ -707,21 +711,21 @@ section .paggination-forward-btn {
   padding: 0 8rem;
 }
 
-.image-side{
+.image-side {
   position: relative;
 }
 
-.vector{
+.vector {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.baseball-player{
+.baseball-player {
   z-index: 1;
 }
 
-.baseball-player{
+.baseball-player {
   position: relative;
   z-index: 1;
 }
