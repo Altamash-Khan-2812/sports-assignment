@@ -19,28 +19,34 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <!-- NAVBAR -->
-      <nav class="flex">
-        <a href="/">
-          <img src="/images/Sport News.svg" alt="page logo" />
-        </a>
-        <ul class="flex">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Trending News</a></li>
-          <li><a href="#">Recent News</a></li>
-          <li><a href="#">Clubs Ranking</a></li>
-          <li><a href="#">Sports Article</a></li>
-        </ul>
+      <header>
+        <nav class="flex">
+          <a href="/">
+            <img src="/images/Sport News.svg" alt="page logo" />
+          </a>
+          <ul class="flex">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Trending News</a></li>
+            <li><a href="#">Recent News</a></li>
+            <li><a href="#">Clubs Ranking</a></li>
+            <li><a href="#">Sports Article</a></li>
+          </ul>
 
-        <button class="flex">
-          <ion-icon name="search-outline" class="search-icon"></ion-icon>
-          Search
-        </button>
-      </nav>
+          <button class="flex">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            Search
+          </button>
+        </nav>
+      </header>
 
       <main>
         <section class="hero-section">
@@ -233,7 +239,7 @@
         <section class="clubs-ranking">
           <div class="half">
             <p class="news-side-heading">Recent News</p>
-            <div class="flex ">
+            <div class="flex">
               <div class="news-side">
                 <div class="yellow-gradient">
                   <img
@@ -270,7 +276,7 @@
                     <p class="type">Ireland Tour of England Test 2023</p>
                   </div>
                 </li>
-                <button class="more-btn">More &rarr; </button>
+                <button class="more-btn">More &rarr;</button>
               </ul>
             </div>
           </div>
@@ -281,16 +287,100 @@
         </section>
 
         <section class="sports-article">
-          <p class="sports-article-heading">Sports Article </p>
-          <ul>
+          <p class="sports-article-heading">Sports Article</p>
+          <ul class="posts-container">
             <li>
-              <img src="/images/basketball-equipment 1.svg" alt="">
-              <div>
-                <img src="/images/jake.svg" alt="">
-                <p>Jake will</p>
+              <img
+                src="/images/basketball-equipment 1.svg"
+                alt="basketball image"
+              />
+              <span class="sport">Basketball</span>
+              <div class="author-info">
+                <img src="/images/jake.svg" alt="jake wills image" />
+                <p class="author">Jake will</p>
               </div>
+              <p class="post-date">04 June 2023</p>
+              <p class="post-heading">
+                5 Exercises Basketball Players Should Be Using To Develop
+                Strength
+              </p>
+              <p class="post-desceription">
+                This article was written by Jake Willhoite from Healthlisted.com
+                Strength in basketball isn’t all about a massive body mass or
+                ripped muscles.
+              </p>
+            </li>
+            <li>
+              <img
+                src="/images/hockey-players 1.svg"
+                alt="some players playing hockey"
+              />
+              <span class="sport">Hockey</span>
+              <div class="author-info">
+                <img src="/images/foxi.svg" alt="foxi.zacon's image" />
+                <p class="author">Foxi.zacon will</p>
+              </div>
+              <p class="post-date">03 June 2023</p>
+              <p class="post-heading">
+                Golden Knights out to fulfill owner's quest to win Stanley Cup
+                in 6th year
+              </p>
+              <p class="post-desceription">
+                The Vegas Golden Knights will play the Florida Panthers in the
+                Stanley Cup Final beginning Saturday.
+              </p>
+            </li>
+            <li>
+              <img
+                src="/images/three-white-shuttlecocks-badminton-racquet 1.svg"
+                alt="three white shuttlecocks badminton racquet"
+              />
+              <span class="sport">Badminton</span>
+              <div class="author-info">
+                <img src="/images/bong.svg" alt="Bong Lozada image" />
+                <p class="author">Bong Lozada</p>
+              </div>
+              <p class="post-date">01 June 2023</p>
+              <p class="post-heading">
+                ‘Outdoor’ Badminton Gets Support From Local Federation
+              </p>
+              <p class="post-desceription">
+                The Badminton World Federation is developing Air Badminton and
+                the country’s governing body, Philippine Badminton Association.
+              </p>
             </li>
           </ul>
+          <div class="buttons">
+            <button class="paggination-back-btn">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button class="paggination-forward-btn">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="text-side">
+            <p class="cta-heading">Newsletter Subscription</p>
+            <div class="input-holder">
+              <input type="text" placeholder="shovon.khan0099@gmail.com" />
+              <div class="arrow-box">
+                <ion-icon
+                  name="arrow-up-outline"
+                  class="diagonal-arrow"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="image-side">
+            <img
+              src="/images/american-football-player-posing-with-ball-white 1.svg"
+              alt="an american player holding a baseball"
+              class="baseball-player"
+            />
+            <img src="/images/Vector.svg" alt="vector image" class="vector">
+          </div>
         </section>
       </main>
     </div>

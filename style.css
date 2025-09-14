@@ -403,14 +403,14 @@ nav button {
   color: #2626269c;
 }
 
-.paggination .paggination-back-btn {
-  background-color: #464749;
+section .paggination-back-btn {
+  background-color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.paggination .paggination-forward-btn {
+section .paggination-forward-btn {
   background-color: #000;
   color: #fff;
   margin-right: 2.5rem;
@@ -457,7 +457,7 @@ nav button {
 }
 
 .yellow-gradient {
-  background: linear-gradient(45deg, #F0A800, #D77600);
+  background: linear-gradient(45deg, #f0a800, #d77600);
   border-radius: 6px;
 }
 
@@ -482,7 +482,7 @@ nav button {
   font-family: "Sequel Sans", sans-serif;
   font-weight: 600;
   color: #ebeef3;
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -497,16 +497,16 @@ nav button {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
-.clubs-ranking .half{
+.clubs-ranking .half {
   width: 50%;
 }
 
 .clubs-ranking .middle-side li .date {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: 500;
   color: #26262699;
   margin-bottom: 1rem;
@@ -515,7 +515,7 @@ nav button {
 .clubs-ranking .middle-side li .type {
   font-family: "Sequel Sans", sans-serif;
   font-weight: 405;
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
   color: #262626;
 }
 
@@ -530,7 +530,7 @@ nav button {
   border-radius: 6px;
 }
 
-.clubs-ranking .more-btn{
+.clubs-ranking .more-btn {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
@@ -547,10 +547,181 @@ nav button {
 /* ********************* */
 /* CLUBS ARTICLE SECTION */
 /* ********************* */
-.sports-article-heading{
+.sports-article {
+  margin-bottom: 8rem;
+}
+
+.posts-container {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 3rem;
+}
+
+.sports-article-heading {
   font-family: "Sequel Sans", sans-serif;
   font-weight: 415;
   color: #262626;
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
+}
+
+.sports-article ul li > img {
+  width: 100%;
+}
+
+.sports-article ul li .author {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #3e3232;
+}
+
+.sports-article ul li .sport {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ebeef3;
+  border: 1px solid #ebeef3;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sports-article ul li .post-date {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #26262699;
+}
+
+.sports-article ul li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  position: relative;
+}
+
+.sports-article ul li .post-heading {
+  font-family: "Sequel Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #262626;
+  line-height: 1.5;
+}
+
+.sports-article ul li .post-desceription {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #696868;
+  line-height: 1.4;
+}
+
+.sports-article .buttons {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.sports-article .buttons button {
+  padding: 1.2rem 2.6rem;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* *********** */
+/* CTA SECTION */
+/* *********** */
+.cta {
+  display: flex;
+  background-color: #ebeef3;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.cta-heading {
+  font-family: "Sequel Sans", sans-serif;
+  font-weight: 800;
+  font-size: 6rem;
+  background: linear-gradient(180deg, #262626, #b8c2ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  margin-bottom: 4.5rem;
+}
+
+.input-holder {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #000;
+  overflow: hidden;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.input-holder input {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.1rem;
+  color: #2626265e;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem 0;
+  width: 35rem;
+  padding-right: 5rem;
+}
+
+.input-holder input::placeholder {
+  color: #2626265e;
+}
+
+.arrow-box {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.diagonal-arrow {
+  transform: rotate(45deg);
+}
+
+.cta .text-side {
+  align-self: center;
+  justify-self: end;
+  padding: 0 8rem;
+}
+
+.image-side{
+  position: relative;
+}
+
+.vector{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.baseball-player{
+  z-index: 1;
+}
+
+.baseball-player{
+  position: relative;
+  z-index: 1;
 }
